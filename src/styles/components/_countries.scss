@@ -3,6 +3,8 @@
       display: grid;
       grid-template-columns: 20% 80%;
       padding: 8px;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
       border-radius: 15px;
       background: $color-3;
       color: $color-1;
@@ -15,6 +17,9 @@
         input[type="radio"] {
           transform: translate(-5px, 1px);
         }
+      }
+      .range-value{
+        margin-left: 1rem;
       }
     }
     .cancel {

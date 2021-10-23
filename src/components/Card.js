@@ -4,7 +4,10 @@ const Card = (props) => {
 
     //Destructuring
     const {country} = props;
-    console.log(country);
+    
+    const numberFormat = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
 
     return (
         <li className="card">
@@ -13,7 +16,7 @@ const Card = (props) => {
                 <ul>
                     <li>{country.name.official}</li>
                     <li>{country.capital}</li>
-                    <li>{country.population}</li>
+                    <li>Pop. {numberFormat(country.population)}</li>
                 </ul>
             </div>
         </li>
